@@ -1,477 +1,477 @@
 {-# LANGUAGE PatternSynonyms, OverloadedStrings #-}
 module Pure.Data.HTML.Properties where
 
-import Pure.Data.View.Patterns (Attribute(..),Property(..))
+import Pure.Data.View.Patterns
 import Pure.Data.Txt (Txt)
 
 --------------------------------------------------------------------------------
 -- HTML Attributes
 
-pattern Algin :: Txt -> Attribute
-pattern Algin v = Attribute ("algin",v)
+pattern Algin :: HasFeatures a => Txt -> a -> a
+pattern Algin v a = Attribute ("algin",v) a
 
-pattern Bgcolor :: Txt -> Attribute
-pattern Bgcolor v = Attribute ("bgcolor",v)
+pattern Bgcolor :: HasFeatures a => Txt -> a -> a
+pattern Bgcolor v a = Attribute ("bgcolor",v) a
 
-pattern Border :: Txt -> Attribute
-pattern Border v = Attribute ("border",v)
+pattern Border :: HasFeatures a => Txt -> a -> a
+pattern Border v a = Attribute ("border",v) a
 
-pattern Buffered :: Txt -> Attribute
-pattern Buffered v = Attribute ("buffered",v)
+pattern Buffered :: HasFeatures a => Txt -> a -> a
+pattern Buffered v a = Attribute ("buffered",v) a
 
-pattern Class :: Txt -> Attribute
-pattern Class v = Attribute ("class",v)
+pattern Class_ :: HasFeatures a => Txt -> a -> a
+pattern Class_ v a = Attribute ("class",v) a
 
-pattern Code :: Txt -> Attribute
-pattern Code v = Attribute ("code",v)
+pattern Code :: HasFeatures a => Txt -> a -> a
+pattern Code v a = Attribute ("code",v) a
 
-pattern Codebase :: Txt -> Attribute
-pattern Codebase v = Attribute ("codebase",v)
+pattern Codebase :: HasFeatures a => Txt -> a -> a
+pattern Codebase v a = Attribute ("codebase",v) a
 
-pattern Color :: Txt -> Attribute
-pattern Color v = Attribute ("color",v)
+pattern Color :: HasFeatures a => Txt -> a -> a
+pattern Color v a = Attribute ("color",v) a
 
-pattern Dirname :: Txt -> Attribute
-pattern Dirname v = Attribute ("dirname",v)
+pattern Dirname :: HasFeatures a => Txt -> a -> a
+pattern Dirname v a = Attribute ("dirname",v) a
 
-pattern Dropzone :: Txt -> Attribute
-pattern Dropzone v = Attribute ("dropzone",v)
+pattern Dropzone :: HasFeatures a => Txt -> a -> a
+pattern Dropzone v a = Attribute ("dropzone",v) a
 
-pattern For :: Txt -> Attribute
-pattern For v = Attribute ("for",v)
+pattern For :: HasFeatures a => Txt -> a -> a
+pattern For v a = Attribute ("for",v) a
 
-pattern Formaction :: Txt -> Attribute
-pattern Formaction v = Attribute ("formaction",v)
+pattern Formaction :: HasFeatures a => Txt -> a -> a
+pattern Formaction v a = Attribute ("formaction",v) a
 
-pattern Ismap :: Txt -> Attribute
-pattern Ismap v = Attribute ("ismap",v)
+pattern Ismap :: HasFeatures a => Txt -> a -> a
+pattern Ismap v a = Attribute ("ismap",v) a
 
-pattern Ping :: Txt -> Attribute
-pattern Ping v = Attribute ("ping",v)
+pattern Ping :: HasFeatures a => Txt -> a -> a
+pattern Ping v a = Attribute ("ping",v) a
 
-pattern Slot :: Txt -> Attribute
-pattern Slot v = Attribute ("slot",v)
+pattern Slot :: HasFeatures a => Txt -> a -> a
+pattern Slot v a = Attribute ("slot",v) a
 
-pattern Translate :: Txt -> Attribute
-pattern Translate v = Attribute ("translate",v)
+pattern Translate :: HasFeatures a => Txt -> a -> a
+pattern Translate v a = Attribute ("translate",v) a
 
 --------------------------------------------------------------------------------
 -- HTML Properties
 
-pattern Accept :: Txt -> Property
-pattern Accept v = Property ("accept",v)
+pattern Accept :: HasFeatures a => Txt -> a -> a
+pattern Accept v a = Property ("accept",v) a
 
-pattern AcceptCharset :: Txt -> Property
-pattern AcceptCharset v = Property ("acceptCharset",v)
+pattern AcceptCharset :: HasFeatures a => Txt -> a -> a
+pattern AcceptCharset v a = Property ("acceptCharset",v) a
 
-pattern AccessKey :: Txt -> Property
-pattern AccessKey v = Property ("accessKey",v)
+pattern AccessKey :: HasFeatures a => Txt -> a -> a
+pattern AccessKey v a = Property ("accessKey",v) a
 
-pattern Action :: Txt -> Property
-pattern Action v = Property ("action",v)
+pattern Action :: HasFeatures a => Txt -> a -> a
+pattern Action v a = Property ("action",v) a
 
-pattern AllowFullScreen :: Txt -> Property
-pattern AllowFullScreen v = Property ("allowFullScreen",v)
+pattern AllowFullScreen :: HasFeatures a => Txt -> a -> a
+pattern AllowFullScreen v a = Property ("allowFullScreen",v) a
 
-pattern Alt :: Txt -> Property
-pattern Alt v = Property ("alt",v)
+pattern Alt :: HasFeatures a => Txt -> a -> a
+pattern Alt v a = Property ("alt",v) a
 
-pattern As :: Txt -> Property
-pattern As v = Property ("as",v)
+pattern As :: HasFeatures a => Txt -> a -> a
+pattern As v a = Property ("as",v) a
 
-pattern Async :: Txt -> Property
-pattern Async v = Property ("async",v)
+pattern Async :: HasFeatures a => Txt -> a -> a
+pattern Async v a = Property ("async",v) a
 
-pattern AutoCapitalize :: Txt -> Property
-pattern AutoCapitalize v = Property ("autoCapitalize",v)
+pattern AutoCapitalize :: HasFeatures a => Txt -> a -> a
+pattern AutoCapitalize v a = Property ("autoCapitalize",v) a
 
-pattern AutoComplete :: Txt -> Property
-pattern AutoComplete v = Property ("autoComplete",v)
+pattern AutoComplete :: HasFeatures a => Txt -> a -> a
+pattern AutoComplete v a = Property ("autoComplete",v) a
 
-pattern AutoCorrect :: Txt -> Property
-pattern AutoCorrect v = Property ("autoCorrect",v)
+pattern AutoCorrect :: HasFeatures a => Txt -> a -> a
+pattern AutoCorrect v a = Property ("autoCorrect",v) a
 
-pattern AutoFocus :: Txt -> Property
-pattern AutoFocus v = Property ("autoFocus",v)
+pattern AutoFocus :: HasFeatures a => Txt -> a -> a
+pattern AutoFocus v a = Property ("autoFocus",v) a
 
-pattern AutoPlay :: Txt -> Property
-pattern AutoPlay v = Property ("autoPlay",v)
+pattern AutoPlay :: HasFeatures a => Txt -> a -> a
+pattern AutoPlay v a = Property ("autoPlay",v) a
 
-pattern AutoSave :: Txt -> Property
-pattern AutoSave v = Property ("autoSave",v)
+pattern AutoSave :: HasFeatures a => Txt -> a -> a
+pattern AutoSave v a = Property ("autoSave",v) a
 
-pattern Capture :: Txt -> Property
-pattern Capture v = Property ("capture",v)
+pattern Capture :: HasFeatures a => Txt -> a -> a
+pattern Capture v a = Property ("capture",v) a
 
-pattern CellPadding :: Txt -> Property
-pattern CellPadding v = Property ("cellPadding",v)
+pattern CellPadding :: HasFeatures a => Txt -> a -> a
+pattern CellPadding v a = Property ("cellPadding",v) a
 
-pattern CellSpacing :: Txt -> Property
-pattern CellSpacing v = Property ("cellSpacing",v)
+pattern CellSpacing :: HasFeatures a => Txt -> a -> a
+pattern CellSpacing v a = Property ("cellSpacing",v) a
 
-pattern Challenge :: Txt -> Property
-pattern Challenge v = Property ("challenge",v)
+pattern Challenge :: HasFeatures a => Txt -> a -> a
+pattern Challenge v a = Property ("challenge",v) a
 
-pattern CharSet :: Txt -> Property
-pattern CharSet v = Property ("charSet",v)
+pattern CharSet :: HasFeatures a => Txt -> a -> a
+pattern CharSet v a = Property ("charSet",v) a
 
-pattern Checked :: Txt -> Property
-pattern Checked v = Property ("checked",v)
+pattern Checked :: HasFeatures a => Txt -> a -> a
+pattern Checked v a = Property ("checked",v) a
 
-pattern Children :: Txt -> Property
-pattern Children v = Property ("children",v)
+pattern Children :: HasFeatures a => Txt -> a -> a
+pattern Children v a = Property ("children",v) a
 
-pattern Cite :: Txt -> Property
-pattern Cite v = Property ("cite",v)
+pattern Cite :: HasFeatures a => Txt -> a -> a
+pattern Cite v a = Property ("cite",v) a
 
-pattern ClassID :: Txt -> Property
-pattern ClassID v = Property ("classID",v)
+pattern ClassID :: HasFeatures a => Txt -> a -> a
+pattern ClassID v a = Property ("classID",v) a
 
-pattern ClassName :: Txt -> Property
-pattern ClassName v = Property ("className",v)
+pattern ClassName :: HasFeatures a => Txt -> a -> a
+pattern ClassName v a = Property ("className",v) a
 
-pattern Cols :: Txt -> Property
-pattern Cols v = Property ("cols",v)
+pattern Cols :: HasFeatures a => Txt -> a -> a
+pattern Cols v a = Property ("cols",v) a
 
-pattern ColSpan :: Txt -> Property
-pattern ColSpan v = Property ("colSpan",v)
+pattern ColSpan :: HasFeatures a => Txt -> a -> a
+pattern ColSpan v a = Property ("colSpan",v) a
 
-pattern Content :: Txt -> Property
-pattern Content v = Property ("content",v)
+pattern Content :: HasFeatures a => Txt -> a -> a
+pattern Content v a = Property ("content",v) a
 
-pattern ContentEditable :: Txt -> Property
-pattern ContentEditable v = Property ("contentEditable",v)
+pattern ContentEditable :: HasFeatures a => Txt -> a -> a
+pattern ContentEditable v a = Property ("contentEditable",v) a
 
-pattern ContextMenu :: Txt -> Property
-pattern ContextMenu v = Property ("contextMenu",v)
+pattern ContextMenu :: HasFeatures a => Txt -> a -> a
+pattern ContextMenu v a = Property ("contextMenu",v) a
 
-pattern Controls :: Txt -> Property
-pattern Controls v = Property ("controls",v)
+pattern Controls :: HasFeatures a => Txt -> a -> a
+pattern Controls v a = Property ("controls",v) a
 
-pattern ControlsList :: Txt -> Property
-pattern ControlsList v = Property ("controlsList",v)
+pattern ControlsList :: HasFeatures a => Txt -> a -> a
+pattern ControlsList v a = Property ("controlsList",v) a
 
-pattern Coords :: Txt -> Property
-pattern Coords v = Property ("coords",v)
+pattern Coords :: HasFeatures a => Txt -> a -> a
+pattern Coords v a = Property ("coords",v) a
 
-pattern CrossOrigin :: Txt -> Property
-pattern CrossOrigin v = Property ("crossOrigin",v)
+pattern CrossOrigin :: HasFeatures a => Txt -> a -> a
+pattern CrossOrigin v a = Property ("crossOrigin",v) a
 
-pattern DangerouslySetInnerHTML :: Txt -> Property
-pattern DangerouslySetInnerHTML v = Property ("dangerouslySetInnerHTML",v)
+pattern DangerouslySetInnerHTML :: HasFeatures a => Txt -> a -> a
+pattern DangerouslySetInnerHTML v a = Property ("dangerouslySetInnerHTML",v) a
 
-pattern Data :: Txt -> Property
-pattern Data v = Property ("data",v)
+pattern Data :: HasFeatures a => Txt -> a -> a
+pattern Data v a = Property ("data",v) a
 
-pattern DateTime :: Txt -> Property
-pattern DateTime v = Property ("dateTime",v)
+pattern DateTime :: HasFeatures a => Txt -> a -> a
+pattern DateTime v a = Property ("dateTime",v) a
 
-pattern Default :: Txt -> Property
-pattern Default v = Property ("default",v)
+pattern Default :: HasFeatures a => Txt -> a -> a
+pattern Default v a = Property ("default",v) a
 
-pattern DefaultChecked :: Txt -> Property
-pattern DefaultChecked v = Property ("defaultChecked",v)
+pattern DefaultChecked :: HasFeatures a => Txt -> a -> a
+pattern DefaultChecked v a = Property ("defaultChecked",v) a
 
-pattern DefaultValue :: Txt -> Property
-pattern DefaultValue v = Property ("defaultValue",v)
+pattern DefaultValue :: HasFeatures a => Txt -> a -> a
+pattern DefaultValue v a = Property ("defaultValue",v) a
 
-pattern Defer :: Txt -> Property
-pattern Defer v = Property ("defer",v)
+pattern Defer :: HasFeatures a => Txt -> a -> a
+pattern Defer v a = Property ("defer",v) a
 
-pattern Dir :: Txt -> Property
-pattern Dir v = Property ("dir",v)
+pattern Dir :: HasFeatures a => Txt -> a -> a
+pattern Dir v a = Property ("dir",v) a
 
-pattern Disabled :: Txt -> Property
-pattern Disabled v = Property ("disabled",v)
+pattern Disabled :: HasFeatures a => Txt -> a -> a
+pattern Disabled v a = Property ("disabled",v) a
 
-pattern Download :: Txt -> Property
-pattern Download v = Property ("download",v)
+pattern Download :: HasFeatures a => Txt -> a -> a
+pattern Download v a = Property ("download",v) a
 
-pattern Draggable :: Txt -> Property
-pattern Draggable v = Property ("draggable",v)
+pattern Draggable :: HasFeatures a => Txt -> a -> a
+pattern Draggable v a = Property ("draggable",v) a
 
-pattern EncType :: Txt -> Property
-pattern EncType v = Property ("encType",v)
+pattern EncType :: HasFeatures a => Txt -> a -> a
+pattern EncType v a = Property ("encType",v) a
 
-pattern HtmlFor :: Txt -> Property
-pattern HtmlFor v = Property ("htmlFor",v)
+pattern HtmlFor :: HasFeatures a => Txt -> a -> a
+pattern HtmlFor v a = Property ("htmlFor",v) a
 
-pattern Form :: Txt -> Property
-pattern Form v = Property ("form",v)
+pattern Form :: HasFeatures a => Txt -> a -> a
+pattern Form v a = Property ("form",v) a
 
-pattern FormMethod :: Txt -> Property
-pattern FormMethod v = Property ("formMethod",v)
+pattern FormMethod :: HasFeatures a => Txt -> a -> a
+pattern FormMethod v a = Property ("formMethod",v) a
 
-pattern FormAction :: Txt -> Property
-pattern FormAction v = Property ("formAction",v)
+pattern FormAction :: HasFeatures a => Txt -> a -> a
+pattern FormAction v a = Property ("formAction",v) a
 
-pattern FormEncType :: Txt -> Property
-pattern FormEncType v = Property ("formEncType",v)
+pattern FormEncType :: HasFeatures a => Txt -> a -> a
+pattern FormEncType v a = Property ("formEncType",v) a
 
-pattern FormNoValidate :: Txt -> Property
-pattern FormNoValidate v = Property ("formNoValidate",v)
+pattern FormNoValidate :: HasFeatures a => Txt -> a -> a
+pattern FormNoValidate v a = Property ("formNoValidate",v) a
 
-pattern FormTarget :: Txt -> Property
-pattern FormTarget v = Property ("formTarget",v)
+pattern FormTarget :: HasFeatures a => Txt -> a -> a
+pattern FormTarget v a = Property ("formTarget",v) a
 
-pattern FrameBorder :: Txt -> Property
-pattern FrameBorder v = Property ("frameBorder",v)
+pattern FrameBorder :: HasFeatures a => Txt -> a -> a
+pattern FrameBorder v a = Property ("frameBorder",v) a
 
-pattern Headers :: Txt -> Property
-pattern Headers v = Property ("headers",v)
+pattern Headers :: HasFeatures a => Txt -> a -> a
+pattern Headers v a = Property ("headers",v) a
 
-pattern Height :: Txt -> Property
-pattern Height v = Property ("height",v)
+pattern Height :: HasFeatures a => Txt -> a -> a
+pattern Height v a = Property ("height",v) a
 
-pattern Hidden :: Txt -> Property
-pattern Hidden v = Property ("hidden",v)
+pattern Hidden :: HasFeatures a => Txt -> a -> a
+pattern Hidden v a = Property ("hidden",v) a
 
-pattern High :: Txt -> Property
-pattern High v = Property ("high",v)
+pattern High :: HasFeatures a => Txt -> a -> a
+pattern High v a = Property ("high",v) a
 
-pattern Href :: Txt -> Property
-pattern Href v = Property ("href",v)
+pattern Href :: HasFeatures a => Txt -> a -> a
+pattern Href v a = Property ("href",v) a
 
-pattern HrefLang :: Txt -> Property
-pattern HrefLang v = Property ("hrefLang",v)
+pattern HrefLang :: HasFeatures a => Txt -> a -> a
+pattern HrefLang v a = Property ("hrefLang",v) a
 
-pattern HttpEquiv :: Txt -> Property
-pattern HttpEquiv v = Property ("httpEquiv",v)
+pattern HttpEquiv :: HasFeatures a => Txt -> a -> a
+pattern HttpEquiv v a = Property ("httpEquiv",v) a
 
-pattern Icon :: Txt -> Property
-pattern Icon v = Property ("icon",v)
+pattern Icon :: HasFeatures a => Txt -> a -> a
+pattern Icon v a = Property ("icon",v) a
 
-pattern Id :: Txt -> Property
-pattern Id v = Property ("id",v)
+pattern Id :: HasFeatures a => Txt -> a -> a
+pattern Id v a = Property ("id",v) a
 
-pattern InnerHTML :: Txt -> Property
-pattern InnerHTML v = Property ("innerHTML",v)
+pattern InnerHTML :: HasFeatures a => Txt -> a -> a
+pattern InnerHTML v a = Property ("innerHTML",v) a
 
-pattern InputMode :: Txt -> Property
-pattern InputMode v = Property ("inputMode",v)
+pattern InputMode :: HasFeatures a => Txt -> a -> a
+pattern InputMode v a = Property ("inputMode",v) a
 
-pattern Integrity :: Txt -> Property
-pattern Integrity v = Property ("integrity",v)
+pattern Integrity :: HasFeatures a => Txt -> a -> a
+pattern Integrity v a = Property ("integrity",v) a
 
-pattern Is :: Txt -> Property
-pattern Is v = Property ("is",v)
+pattern Is :: HasFeatures a => Txt -> a -> a
+pattern Is v a = Property ("is",v) a
 
-pattern ItemID :: Txt -> Property
-pattern ItemID v = Property ("itemID",v)
+pattern ItemID :: HasFeatures a => Txt -> a -> a
+pattern ItemID v a = Property ("itemID",v) a
 
-pattern ItemProp :: Txt -> Property
-pattern ItemProp v = Property ("itemProp",v)
+pattern ItemProp :: HasFeatures a => Txt -> a -> a
+pattern ItemProp v a = Property ("itemProp",v) a
 
-pattern ItemRef :: Txt -> Property
-pattern ItemRef v = Property ("itemRef",v)
+pattern ItemRef :: HasFeatures a => Txt -> a -> a
+pattern ItemRef v a = Property ("itemRef",v) a
 
-pattern ItemScope :: Txt -> Property
-pattern ItemScope v = Property ("itemScope",v)
+pattern ItemScope :: HasFeatures a => Txt -> a -> a
+pattern ItemScope v a = Property ("itemScope",v) a
 
-pattern ItemType :: Txt -> Property
-pattern ItemType v = Property ("itemType",v)
+pattern ItemType :: HasFeatures a => Txt -> a -> a
+pattern ItemType v a = Property ("itemType",v) a
 
-pattern KeyParams :: Txt -> Property
-pattern KeyParams v = Property ("keyParams",v)
+pattern KeyParams :: HasFeatures a => Txt -> a -> a
+pattern KeyParams v a = Property ("keyParams",v) a
 
-pattern KeyType :: Txt -> Property
-pattern KeyType v = Property ("keyType",v)
+pattern KeyType :: HasFeatures a => Txt -> a -> a
+pattern KeyType v a = Property ("keyType",v) a
 
-pattern Kind :: Txt -> Property
-pattern Kind v = Property ("kind",v)
+pattern Kind :: HasFeatures a => Txt -> a -> a
+pattern Kind v a = Property ("kind",v) a
 
-pattern Label :: Txt -> Property
-pattern Label v = Property ("label",v)
+pattern Label :: HasFeatures a => Txt -> a -> a
+pattern Label v a = Property ("label",v) a
 
-pattern Lang :: Txt -> Property
-pattern Lang v = Property ("lang",v)
+pattern Lang :: HasFeatures a => Txt -> a -> a
+pattern Lang v a = Property ("lang",v) a
 
-pattern List :: Txt -> Property
-pattern List v = Property ("list",v)
+pattern List :: HasFeatures a => Txt -> a -> a
+pattern List v a = Property ("list",v) a
 
-pattern Loop :: Txt -> Property
-pattern Loop v = Property ("loop",v)
+pattern Loop :: HasFeatures a => Txt -> a -> a
+pattern Loop v a = Property ("loop",v) a
 
-pattern Low :: Txt -> Property
-pattern Low v = Property ("low",v)
+pattern Low :: HasFeatures a => Txt -> a -> a
+pattern Low v a = Property ("low",v) a
 
-pattern Manifest :: Txt -> Property
-pattern Manifest v = Property ("manifest",v)
+pattern Manifest :: HasFeatures a => Txt -> a -> a
+pattern Manifest v a = Property ("manifest",v) a
 
-pattern MarginWidth :: Txt -> Property
-pattern MarginWidth v = Property ("marginWidth",v)
+pattern MarginWidth :: HasFeatures a => Txt -> a -> a
+pattern MarginWidth v a = Property ("marginWidth",v) a
 
-pattern MarginHeight :: Txt -> Property
-pattern MarginHeight v = Property ("marginHeight",v)
+pattern MarginHeight :: HasFeatures a => Txt -> a -> a
+pattern MarginHeight v a = Property ("marginHeight",v) a
 
-pattern Max :: Txt -> Property
-pattern Max v = Property ("max",v)
+pattern Max :: HasFeatures a => Txt -> a -> a
+pattern Max v a = Property ("max",v) a
 
-pattern MaxLength :: Txt -> Property
-pattern MaxLength v = Property ("maxLength",v)
+pattern MaxLength :: HasFeatures a => Txt -> a -> a
+pattern MaxLength v a = Property ("maxLength",v) a
 
-pattern Media :: Txt -> Property
-pattern Media v = Property ("media",v)
+pattern Media :: HasFeatures a => Txt -> a -> a
+pattern Media v a = Property ("media",v) a
 
-pattern MediaGroup :: Txt -> Property
-pattern MediaGroup v = Property ("mediaGroup",v)
+pattern MediaGroup :: HasFeatures a => Txt -> a -> a
+pattern MediaGroup v a = Property ("mediaGroup",v) a
 
-pattern Method :: Txt -> Property
-pattern Method v = Property ("method",v)
+pattern Method :: HasFeatures a => Txt -> a -> a
+pattern Method v a = Property ("method",v) a
 
-pattern Min :: Txt -> Property
-pattern Min v = Property ("min",v)
+pattern Min :: HasFeatures a => Txt -> a -> a
+pattern Min v a = Property ("min",v) a
 
-pattern MinLength :: Txt -> Property
-pattern MinLength v = Property ("minLength",v)
+pattern MinLength :: HasFeatures a => Txt -> a -> a
+pattern MinLength v a = Property ("minLength",v) a
 
-pattern Multiple :: Txt -> Property
-pattern Multiple v = Property ("multiple",v)
+pattern Multiple :: HasFeatures a => Txt -> a -> a
+pattern Multiple v a = Property ("multiple",v) a
 
-pattern Muted :: Txt -> Property
-pattern Muted v = Property ("muted",v)
+pattern Muted :: HasFeatures a => Txt -> a -> a
+pattern Muted v a = Property ("muted",v) a
 
-pattern Name :: Txt -> Property
-pattern Name v = Property ("name",v)
+pattern Name :: HasFeatures a => Txt -> a -> a
+pattern Name v a = Property ("name",v) a
 
-pattern Nonce :: Txt -> Property
-pattern Nonce v = Property ("nonce",v)
+pattern Nonce :: HasFeatures a => Txt -> a -> a
+pattern Nonce v a = Property ("nonce",v) a
 
-pattern NoValidate :: Txt -> Property
-pattern NoValidate v = Property ("noValidate",v)
+pattern NoValidate :: HasFeatures a => Txt -> a -> a
+pattern NoValidate v a = Property ("noValidate",v) a
 
-pattern Open :: Txt -> Property
-pattern Open v = Property ("open",v)
+pattern Open :: HasFeatures a => Txt -> a -> a
+pattern Open v a = Property ("open",v) a
 
-pattern Optimum :: Txt -> Property
-pattern Optimum v = Property ("optimum",v)
+pattern Optimum :: HasFeatures a => Txt -> a -> a
+pattern Optimum v a = Property ("optimum",v) a
 
-pattern Pattern :: Txt -> Property
-pattern Pattern v = Property ("pattern",v)
+pattern Pattern :: HasFeatures a => Txt -> a -> a
+pattern Pattern v a = Property ("pattern",v) a
 
-pattern Placeholder :: Txt -> Property
-pattern Placeholder v = Property ("placeholder",v)
+pattern Placeholder :: HasFeatures a => Txt -> a -> a
+pattern Placeholder v a = Property ("placeholder",v) a
 
-pattern PlaysInline :: Txt -> Property
-pattern PlaysInline v = Property ("playsInline",v)
+pattern PlaysInline :: HasFeatures a => Txt -> a -> a
+pattern PlaysInline v a = Property ("playsInline",v) a
 
-pattern Poster :: Txt -> Property
-pattern Poster v = Property ("poster",v)
+pattern Poster :: HasFeatures a => Txt -> a -> a
+pattern Poster v a = Property ("poster",v) a
 
-pattern Preload :: Txt -> Property
-pattern Preload v = Property ("preload",v)
+pattern Preload :: HasFeatures a => Txt -> a -> a
+pattern Preload v a = Property ("preload",v) a
 
-pattern Profile :: Txt -> Property
-pattern Profile v = Property ("profile",v)
+pattern Profile :: HasFeatures a => Txt -> a -> a
+pattern Profile v a = Property ("profile",v) a
 
-pattern RadioGroup :: Txt -> Property
-pattern RadioGroup v = Property ("radioGroup",v)
+pattern RadioGroup :: HasFeatures a => Txt -> a -> a
+pattern RadioGroup v a = Property ("radioGroup",v) a
 
-pattern ReadOnly :: Txt -> Property
-pattern ReadOnly v = Property ("readOnly",v)
+pattern ReadOnly :: HasFeatures a => Txt -> a -> a
+pattern ReadOnly v a = Property ("readOnly",v) a
 
-pattern ReferrerPolicy :: Txt -> Property
-pattern ReferrerPolicy v = Property ("referrerPolicy",v)
+pattern ReferrerPolicy :: HasFeatures a => Txt -> a -> a
+pattern ReferrerPolicy v a = Property ("referrerPolicy",v) a
 
-pattern Rel :: Txt -> Property
-pattern Rel v = Property ("rel",v)
+pattern Rel :: HasFeatures a => Txt -> a -> a
+pattern Rel v a = Property ("rel",v) a
 
-pattern Required :: Txt -> Property
-pattern Required v = Property ("required",v)
+pattern Required :: HasFeatures a => Txt -> a -> a
+pattern Required v a = Property ("required",v) a
 
-pattern Reversed :: Txt -> Property
-pattern Reversed v = Property ("reversed",v)
+pattern Reversed :: HasFeatures a => Txt -> a -> a
+pattern Reversed v a = Property ("reversed",v) a
 
-pattern Role :: Txt -> Property
-pattern Role v = Property ("role",v)
+pattern Role :: HasFeatures a => Txt -> a -> a
+pattern Role v a = Property ("role",v) a
 
-pattern Rows :: Txt -> Property
-pattern Rows v = Property ("rows",v)
+pattern Rows :: HasFeatures a => Txt -> a -> a
+pattern Rows v a = Property ("rows",v) a
 
-pattern RowSpan :: Txt -> Property
-pattern RowSpan v = Property ("rowSpan",v)
+pattern RowSpan :: HasFeatures a => Txt -> a -> a
+pattern RowSpan v a = Property ("rowSpan",v) a
 
-pattern Sandbox :: Txt -> Property
-pattern Sandbox v = Property ("sandbox",v)
+pattern Sandbox :: HasFeatures a => Txt -> a -> a
+pattern Sandbox v a = Property ("sandbox",v) a
 
-pattern Scope :: Txt -> Property
-pattern Scope v = Property ("scope",v)
+pattern Scope :: HasFeatures a => Txt -> a -> a
+pattern Scope v a = Property ("scope",v) a
 
-pattern Scoped :: Txt -> Property
-pattern Scoped v = Property ("scoped",v)
+pattern Scoped :: HasFeatures a => Txt -> a -> a
+pattern Scoped v a = Property ("scoped",v) a
 
-pattern Scrolling :: Txt -> Property
-pattern Scrolling v = Property ("scrolling",v)
+pattern Scrolling :: HasFeatures a => Txt -> a -> a
+pattern Scrolling v a = Property ("scrolling",v) a
 
-pattern Seamless :: Txt -> Property
-pattern Seamless v = Property ("seamless",v)
+pattern Seamless :: HasFeatures a => Txt -> a -> a
+pattern Seamless v a = Property ("seamless",v) a
 
-pattern Selected :: Txt -> Property
-pattern Selected v = Property ("selected",v)
+pattern Selected :: HasFeatures a => Txt -> a -> a
+pattern Selected v a = Property ("selected",v) a
 
-pattern Shape :: Txt -> Property
-pattern Shape v = Property ("shape",v)
+pattern Shape :: HasFeatures a => Txt -> a -> a
+pattern Shape v a = Property ("shape",v) a
 
-pattern Size :: Txt -> Property
-pattern Size v = Property ("size",v)
+pattern Size :: HasFeatures a => Txt -> a -> a
+pattern Size v a = Property ("size",v) a
 
-pattern Sizes :: Txt -> Property
-pattern Sizes v = Property ("sizes",v)
+pattern Sizes :: HasFeatures a => Txt -> a -> a
+pattern Sizes v a = Property ("sizes",v) a
 
-pattern Span :: Txt -> Property
-pattern Span v = Property ("span",v)
+pattern Span :: HasFeatures a => Txt -> a -> a
+pattern Span v a = Property ("span",v) a
 
-pattern SpellCheck :: Txt -> Property
-pattern SpellCheck v = Property ("spellCheck",v)
+pattern SpellCheck :: HasFeatures a => Txt -> a -> a
+pattern SpellCheck v a = Property ("spellCheck",v) a
 
-pattern Src :: Txt -> Property
-pattern Src v = Property ("src",v)
+pattern Src :: HasFeatures a => Txt -> a -> a
+pattern Src v a = Property ("src",v) a
 
-pattern SrcDoc :: Txt -> Property
-pattern SrcDoc v = Property ("srcDoc",v)
+pattern SrcDoc :: HasFeatures a => Txt -> a -> a
+pattern SrcDoc v a = Property ("srcDoc",v) a
 
-pattern SrcLang :: Txt -> Property
-pattern SrcLang v = Property ("srcLang",v)
+pattern SrcLang :: HasFeatures a => Txt -> a -> a
+pattern SrcLang v a = Property ("srcLang",v) a
 
-pattern SrcSet :: Txt -> Property
-pattern SrcSet v = Property ("srcSet",v)
+pattern SrcSet :: HasFeatures a => Txt -> a -> a
+pattern SrcSet v a = Property ("srcSet",v) a
 
-pattern Start :: Txt -> Property
-pattern Start v = Property ("start",v)
+pattern Start :: HasFeatures a => Txt -> a -> a
+pattern Start v a = Property ("start",v) a
 
-pattern Step :: Txt -> Property
-pattern Step v = Property ("step",v)
+pattern Step :: HasFeatures a => Txt -> a -> a
+pattern Step v a = Property ("step",v) a
 
-pattern Style :: Txt -> Property
-pattern Style v = Property ("style",v)
+pattern Style :: HasFeatures a => Txt -> a -> a
+pattern Style v a = Property ("style",v) a
 
-pattern Summary :: Txt -> Property
-pattern Summary v = Property ("summary",v)
+pattern Summary :: HasFeatures a => Txt -> a -> a
+pattern Summary v a = Property ("summary",v) a
 
-pattern TabIndex :: Txt -> Property
-pattern TabIndex v = Property ("tabIndex",v)
+pattern TabIndex :: HasFeatures a => Txt -> a -> a
+pattern TabIndex v a = Property ("tabIndex",v) a
 
-pattern Target :: Txt -> Property
-pattern Target v = Property ("target",v)
+pattern Target :: HasFeatures a => Txt -> a -> a
+pattern Target v a = Property ("target",v) a
 
-pattern Title :: Txt -> Property
-pattern Title v = Property ("title",v)
+pattern Title :: HasFeatures a => Txt -> a -> a
+pattern Title v a = Property ("title",v) a
 
-pattern Type :: Txt -> Property
-pattern Type v = Property ("type",v)
+pattern Type :: HasFeatures a => Txt -> a -> a
+pattern Type v a = Property ("type",v) a
 
-pattern UseMap :: Txt -> Property
-pattern UseMap v = Property ("useMap",v)
+pattern UseMap :: HasFeatures a => Txt -> a -> a
+pattern UseMap v a = Property ("useMap",v) a
 
-pattern Value :: Txt -> Property
-pattern Value v = Property ("value",v)
+pattern Value :: HasFeatures a => Txt -> a -> a
+pattern Value v a = Property ("value",v) a
 
-pattern Width :: Txt -> Property
-pattern Width v = Property ("width",v)
+pattern Width :: HasFeatures a => Txt -> a -> a
+pattern Width v a = Property ("width",v) a
 
-pattern Wmode :: Txt -> Property
-pattern Wmode v = Property ("wmode",v)
+pattern Wmode :: HasFeatures a => Txt -> a -> a
+pattern Wmode v a = Property ("wmode",v) a
 
-pattern Wrap :: Txt -> Property
-pattern Wrap v = Property ("wrap",v)
+pattern Wrap :: HasFeatures a => Txt -> a -> a
+pattern Wrap v a = Property ("wrap",v) a
 
