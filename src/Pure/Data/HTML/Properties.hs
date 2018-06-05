@@ -10,11 +10,11 @@ import Pure.Data.Txt (Txt)
 pattern Algin :: HasFeatures a => Txt -> a -> a
 pattern Algin v a = Attribute "algin" v a
 
-pattern Bgcolor :: HasFeatures a => Txt -> a -> a
-pattern Bgcolor v a = Attribute "bgcolor" v a
+pattern Bgcolor_ :: HasFeatures a => Txt -> a -> a
+pattern Bgcolor_ v a = Attribute "bgcolor" v a
 
-pattern Border :: HasFeatures a => Txt -> a -> a
-pattern Border v a = Attribute "border" v a
+pattern Border_ :: HasFeatures a => Txt -> a -> a
+pattern Border_ v a = Attribute "border" v a
 
 pattern Buffered :: HasFeatures a => Txt -> a -> a
 pattern Buffered v a = Attribute "buffered" v a
@@ -28,8 +28,8 @@ pattern Code v a = Attribute "code" v a
 pattern Codebase :: HasFeatures a => Txt -> a -> a
 pattern Codebase v a = Attribute "codebase" v a
 
-pattern Color :: HasFeatures a => Txt -> a -> a
-pattern Color v a = Attribute "color" v a
+pattern Color_ :: HasFeatures a => Txt -> a -> a
+pattern Color_ v a = Attribute "color" v a
 
 pattern Dirname :: HasFeatures a => Txt -> a -> a
 pattern Dirname v a = Attribute "dirname" v a
@@ -118,8 +118,8 @@ pattern CharSet v a = Property "charSet" v a
 pattern Checked :: HasFeatures a => Txt -> a -> a
 pattern Checked v a = Property "checked" v a
 
-pattern Children :: HasFeatures a => Txt -> a -> a
-pattern Children v a = Property "children" v a
+pattern Children_ :: HasFeatures a => Txt -> a -> a
+pattern Children_ v a = Property "children" v a
 
 pattern Cite :: HasFeatures a => Txt -> a -> a
 pattern Cite v a = Property "cite" v a
@@ -136,8 +136,8 @@ pattern Cols v a = Property "cols" v a
 pattern ColSpan :: HasFeatures a => Txt -> a -> a
 pattern ColSpan v a = Property "colSpan" v a
 
-pattern Content :: HasFeatures a => Txt -> a -> a
-pattern Content v a = Property "content" v a
+pattern Content_ :: HasFeatures a => Txt -> a -> a
+pattern Content_ v a = Property "content" v a
 
 pattern ContentEditable :: HasFeatures a => Txt -> a -> a
 pattern ContentEditable v a = Property "contentEditable" v a
@@ -220,8 +220,8 @@ pattern FrameBorder v a = Property "frameBorder" v a
 pattern Headers :: HasFeatures a => Txt -> a -> a
 pattern Headers v a = Property "headers" v a
 
-pattern Height :: HasFeatures a => Txt -> a -> a
-pattern Height v a = Property "height" v a
+pattern Height_:: HasFeatures a => Txt -> a -> a
+pattern Height_ v a = Property "height" v a
 
 pattern Hidden :: HasFeatures a => Txt -> a -> a
 pattern Hidden v a = Property "hidden" v a
@@ -415,8 +415,8 @@ pattern Shape v a = Property "shape" v a
 pattern Size :: HasFeatures a => Txt -> a -> a
 pattern Size v a = Property "size" v a
 
-pattern Sizes :: HasFeatures a => Txt -> a -> a
-pattern Sizes v a = Property "sizes" v a
+-- pattern Sizes :: HasFeatures a => Txt -> a -> a
+-- pattern Sizes v a = Property "sizes" v a
 
 pattern Span :: HasFeatures a => Txt -> a -> a
 pattern Span v a = Property "span" v a
@@ -466,8 +466,8 @@ pattern UseMap v a = Property "useMap" v a
 pattern Value :: HasFeatures a => Txt -> a -> a
 pattern Value v a = Property "value" v a
 
-pattern Width :: HasFeatures a => Txt -> a -> a
-pattern Width v a = Property "width" v a
+-- pattern Width :: HasFeatures a => Txt -> a -> a
+-- pattern Width v a = Property "width" v a
 
 pattern Wmode :: HasFeatures a => Txt -> a -> a
 pattern Wmode v a = Property "wmode" v a
