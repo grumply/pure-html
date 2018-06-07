@@ -71,7 +71,7 @@ pattern Action :: HasFeatures a => Txt -> a -> a
 pattern Action v a = Property "action" v a
 
 pattern AllowFullScreen :: HasFeatures a => Txt -> a -> a
-pattern AllowFullScreen v a = Property "allowFullScreen" v a
+pattern AllowFullScreen v a = Property "allowfullScreen" v a
 
 pattern Alt :: HasFeatures a => Txt -> a -> a
 pattern Alt v a = Property "alt" v a
@@ -83,22 +83,22 @@ pattern Async :: HasFeatures a => Txt -> a -> a
 pattern Async v a = Property "async" v a
 
 pattern AutoCapitalize :: HasFeatures a => Txt -> a -> a
-pattern AutoCapitalize v a = Property "autoCapitalize" v a
+pattern AutoCapitalize v a = Property "autocapitalize" v a
 
 pattern AutoComplete :: HasFeatures a => Txt -> a -> a
-pattern AutoComplete v a = Property "autoComplete" v a
+pattern AutoComplete v a = Property "autocomplete" v a
 
 pattern AutoCorrect :: HasFeatures a => Txt -> a -> a
-pattern AutoCorrect v a = Property "autoCorrect" v a
+pattern AutoCorrect v a = Property "autocorrect" v a
 
 pattern AutoFocus :: HasFeatures a => Txt -> a -> a
-pattern AutoFocus v a = Property "autoFocus" v a
+pattern AutoFocus v a = Property "autofocus" v a
 
 pattern AutoPlay :: HasFeatures a => Txt -> a -> a
-pattern AutoPlay v a = Property "autoPlay" v a
+pattern AutoPlay v a = Property "autoplay" v a
 
 pattern AutoSave :: HasFeatures a => Txt -> a -> a
-pattern AutoSave v a = Property "autoSave" v a
+pattern AutoSave v a = Property "autosave" v a
 
 pattern Capture :: HasFeatures a => Txt -> a -> a
 pattern Capture v a = Property "capture" v a
@@ -125,7 +125,7 @@ pattern Cite :: HasFeatures a => Txt -> a -> a
 pattern Cite v a = Property "cite" v a
 
 pattern ClassID :: HasFeatures a => Txt -> a -> a
-pattern ClassID v a = Property "classID" v a
+pattern ClassID v a = Property "classId" v a
 
 pattern ClassName :: HasFeatures a => Txt -> a -> a
 pattern ClassName v a = Property "className" v a
@@ -156,9 +156,6 @@ pattern Coords v a = Property "coords" v a
 
 pattern CrossOrigin :: HasFeatures a => Txt -> a -> a
 pattern CrossOrigin v a = Property "crossOrigin" v a
-
-pattern DangerouslySetInnerHTML :: HasFeatures a => Txt -> a -> a
-pattern DangerouslySetInnerHTML v a = Property "dangerouslySetInnerHTML" v a
 
 pattern Data :: HasFeatures a => Txt -> a -> a
 pattern Data v a = Property "data" v a
@@ -353,7 +350,7 @@ pattern Placeholder :: HasFeatures a => Txt -> a -> a
 pattern Placeholder v a = Property "placeholder" v a
 
 pattern PlaysInline :: HasFeatures a => Txt -> a -> a
-pattern PlaysInline v a = Property "playsInline" v a
+pattern PlaysInline v a = Property "playsinline" v a
 
 pattern Poster :: HasFeatures a => Txt -> a -> a
 pattern Poster v a = Property "poster" v a
@@ -365,7 +362,7 @@ pattern Profile :: HasFeatures a => Txt -> a -> a
 pattern Profile v a = Property "profile" v a
 
 pattern RadioGroup :: HasFeatures a => Txt -> a -> a
-pattern RadioGroup v a = Property "radioGroup" v a
+pattern RadioGroup v a = Property "radiogroup" v a
 
 pattern ReadOnly :: HasFeatures a => Txt -> a -> a
 pattern ReadOnly v a = Property "readOnly" v a
@@ -422,19 +419,19 @@ pattern Span :: HasFeatures a => Txt -> a -> a
 pattern Span v a = Property "span" v a
 
 pattern SpellCheck :: HasFeatures a => Txt -> a -> a
-pattern SpellCheck v a = Property "spellCheck" v a
+pattern SpellCheck v a = Property "spellcheck" v a
 
 pattern Src :: HasFeatures a => Txt -> a -> a
 pattern Src v a = Property "src" v a
 
 pattern SrcDoc :: HasFeatures a => Txt -> a -> a
-pattern SrcDoc v a = Property "srcDoc" v a
+pattern SrcDoc v a = Property "srcdoc" v a
 
 pattern SrcLang :: HasFeatures a => Txt -> a -> a
-pattern SrcLang v a = Property "srcLang" v a
+pattern SrcLang v a = Property "srclang" v a
 
 pattern SrcSet :: HasFeatures a => Txt -> a -> a
-pattern SrcSet v a = Property "srcSet" v a
+pattern SrcSet v a = Property "srcset" v a
 
 pattern Start :: HasFeatures a => Txt -> a -> a
 pattern Start v a = Property "start" v a
