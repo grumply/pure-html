@@ -7,6 +7,21 @@ import Pure.Data.Txt (Txt)
 --------------------------------------------------------------------------------
 -- HTML Attributes
 
+-- Safari does not like this as a property
+pattern AutoCapitalize :: HasFeatures a => Txt -> a -> a
+pattern AutoCapitalize v a = Attribute "autocapitalize" v a
+
+pattern AutoComplete :: HasFeatures a => Txt -> a -> a
+pattern AutoComplete v a = Attribute "autocomplete" v a
+
+-- Safari does not like this as a property
+pattern AutoCorrect :: HasFeatures a => Txt -> a -> a
+pattern AutoCorrect v a = Attribute "autocorrect" v a
+
+-- Safari does not like this as a property
+pattern AutoFocus :: HasFeatures a => Txt -> a -> a
+pattern AutoFocus v a = Attribute "autofocus" v a
+
 pattern Algin :: HasFeatures a => Txt -> a -> a
 pattern Algin v a = Attribute "algin" v a
 
@@ -52,6 +67,11 @@ pattern Ping v a = Attribute "ping" v a
 pattern Slot :: HasFeatures a => Txt -> a -> a
 pattern Slot v a = Attribute "slot" v a
 
+-- Using this as a property introduced some bugs where
+-- SpellCheck "false" caused <input spellcheck="true">
+pattern SpellCheck :: HasFeatures a => Txt -> a -> a
+pattern SpellCheck v a = Attribute "spellcheck" v a
+
 pattern Translate :: HasFeatures a => Txt -> a -> a
 pattern Translate v a = Attribute "translate" v a
 
@@ -81,18 +101,6 @@ pattern As v a = Property "as" v a
 
 pattern Async :: HasFeatures a => Txt -> a -> a
 pattern Async v a = Property "async" v a
-
-pattern AutoCapitalize :: HasFeatures a => Txt -> a -> a
-pattern AutoCapitalize v a = Property "autocapitalize" v a
-
-pattern AutoComplete :: HasFeatures a => Txt -> a -> a
-pattern AutoComplete v a = Property "autocomplete" v a
-
-pattern AutoCorrect :: HasFeatures a => Txt -> a -> a
-pattern AutoCorrect v a = Property "autocorrect" v a
-
-pattern AutoFocus :: HasFeatures a => Txt -> a -> a
-pattern AutoFocus v a = Property "autofocus" v a
 
 pattern AutoPlay :: HasFeatures a => Txt -> a -> a
 pattern AutoPlay v a = Property "autoplay" v a
@@ -417,9 +425,6 @@ pattern Size v a = Property "size" v a
 
 pattern Span :: HasFeatures a => Txt -> a -> a
 pattern Span v a = Property "span" v a
-
-pattern SpellCheck :: HasFeatures a => Txt -> a -> a
-pattern SpellCheck v a = Property "spellcheck" v a
 
 pattern Src :: HasFeatures a => Txt -> a -> a
 pattern Src v a = Property "src" v a
